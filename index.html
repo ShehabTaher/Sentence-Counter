@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="area">
+            <h4>Sentence Counter</h4>
+            <textarea id="textArea" onkeyup="getVowelCount(this.value);getWordCount(this.value);getCharacterCount(this.value)"></textarea>
+        </div>
+        <div class="counter-box">
+            <p>
+                word <span id="wordCount"class="word-span">0</span>
+            </p>
+            <p>
+                character <span id="characterCount"class="character-span">0</span>
+            </p>
+            <p>
+                Vowel <span id="vowelCount" class="Vowel-span">0</span>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
